@@ -1,0 +1,24 @@
+// ======================================
+// Placeholders and extensions by criscom
+// ======================================
+
+%clearfix { //From SACFW _placeholder.scss line 1ff
+  @include clearfix;
+}
+
+%clearfix-own {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+// From SASS and Compass for Webdesigners _placeholder.scss line 4ff
+%single-transition {
+  @include single-transition(all, .3s, ease, 0s);
+}
+
+//From SACFW _placeholder.scss line 17ff
+%sb-menu-text-shadow {
+  @include single-text-shadow();
+}

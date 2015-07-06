@@ -1,0 +1,605 @@
+
+
+body {
+  padding-top: 0;
+  background-color: $color1;
+  color: $color2;
+  background-image: image-url('background.jpg');
+  background-repeat: repeat-x;
+  @include adjust-font-size-to(13px);
+  @media all and (min-width: 816px) and (max-width: 975px) {
+    background-image: image-url('background-816.png');
+  }
+  @media all and (min-width: 616px) and (max-width: 815px) {
+    background-size: 1px 127px;
+  }
+  @media all and (min-width: 481px) and (max-width: 615px) {
+    background-size: 1px 98px;
+  }
+}
+
+.download-file a,
+.field p a,
+.field-name-body p a,
+h2.node-title a,
+#content li a, {
+  color: $color2;
+  text-decoration: underline;
+  font-weight: 300;
+  &:visited, &:hover {
+    color: $color3;
+  }
+}
+
+#content li {
+  list-style: none;
+  a {
+    @include adjust-font-size-to(18px);
+  }
+}
+
+.header {
+  .ie8 &, .ie9 &, .ie1 &, .opera & {
+    height: 205px;
+  }
+  background-image: image-url('header-1.jpg');
+    @media all and (max-width: 480px) {
+    background-image: image-url('header-1-480.jpg');
+    background-size: contain;
+    height: 68px;
+    background-color: white;
+  }
+
+  .section-team & {
+    background-image: image-url('header-2.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-2-480.jpg');
+      
+    }
+  }
+  .section-leistungsspektrum & {
+    background-image: image-url('header-6.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-6-480.jpg');
+      
+    }
+  }
+  .page-node-7 & {
+    background-image: image-url('header-phyto.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-phyto-480.jpg');
+      
+    }
+  }
+  .page-node-8 & {
+    background-image: image-url('header-tcm.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-tcm-480.jpg');
+      
+    }
+  }
+  .page-node-9 & {
+    background-image: image-url('header-bachblueten.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-bachblueten-480.jpg');
+      
+    }
+  }
+  .page-node-261 & {
+    background-image: image-url('header-homoeopapathie.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-homoeopapathie-480.jpg');
+      
+    }
+  }
+  .page-node-10 & {
+    background-image: image-url('header-aroma.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-aroma-480.jpg');
+      
+    }
+  }
+  .page-node-11 & {
+    background-image: image-url('header-sport.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-sport-480.jpg');
+      
+    }
+  }
+  .page-node-13 & {
+    background-image: image-url('header-mutterkind.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-mutterkind-480.jpg');
+      
+    }
+  }
+  .page-node-14 & {
+    background-image: image-url('header-geschenkideen.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-geschenkideen-480.jpg');
+      
+    }
+  }
+  .section-produktlinien & {
+    background-image: image-url('header-4.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-4-480.jpg');
+      
+    }
+  }
+  .section-links & {
+    background-image: image-url('header-links.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-links-480.jpg');
+      
+    }
+  }
+  .section-nachtdienstkalender & {
+    background-image: image-url('header-nachtdienst.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-nachtdienst-480.jpg');
+      
+    }
+  }
+  .section-standort & {
+    background-image: image-url('header-standort.jpg');
+    @media all and (max-width: 480px) {
+      background-image: image-url('header-standort-480.jpg');
+      
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  @media all and (min-width: 976px) {
+    background-size: 976px 205px;
+    height: 204px;
+  }
+  @media all and (min-width: 816px) and (max-width: 975px) {
+    background-size: 814px 171px;
+    height: 171px;
+    background-position: 1px 0;
+    .opera & {
+      height: 171px;
+    }
+  }
+  @media all and (min-width: 616px) and (max-width: 815px) {
+    background-size: 609px 128px;
+    background-position: 4px bottom;
+    height: 815px;
+    .opera & {
+      height: 128px;
+    }
+  }
+  @media all and (min-width: 481px) and (max-width: 615px) {
+    background-size: 473px 102px;
+    background-position: 4px 0;
+    height: 102px;
+    .opera & {
+      height: 102px;
+    }
+  }
+}
+
+#logo {
+  margin: 0;
+  padding: 0;
+  @media all and (min-width: 800px) and (max-width: 975px) {
+    img {
+      width: 800px;
+    }
+  }
+  @media all and (min-width: 616px) and (max-width: 815px) {
+    img {
+      width: 616px;
+    }
+  }
+
+  @media all and (min-width: 481px) and (max-width: 615px) {
+    img {
+      width: 481px;
+    }
+  }
+  @media all and (max-width: 480px) {
+    img {
+      width: 99%;
+      max-width: 480px;
+    }
+  }
+}
+
+.field-name-body .inline img {
+  @media all and (max-width: 815px) {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+#main {
+  background-repeat: repeat-y;
+  margin-top: 1px; // 0;
+  padding-top: 0;
+
+  @media all and (min-width: 976px) {
+    background-image: image-url('page-bg.jpg');
+  }
+  @media all and (min-width: 816px) and (max-width: 975px) {
+    background-image: image-url('page-bg-816.png');
+  }
+  @media all and (min-width: 616px) and (max-width: 815px) {
+    background-image: image-url('page-bg-616.png');
+  }
+  @media all and (min-width: 481px) and (max-width: 615px) {
+    background-image: image-url('page-bg-481.png');
+  }
+  @media all and (max-width: 480px) {
+    background-color: white;
+  }
+}
+
+#content {
+  z-index: 10;
+  padding: 5px 16px 0 15px;
+  border-left: 2px dotted #641a45;
+  margin: 40px 0 10px -15px;
+  min-height: 410px;
+  @media all and (min-width: 816px) and (max-width: 975px) {
+    background-image: image-url('logo-sidebar-detail.jpg');
+    background-repeat: no-repeat;
+    background-position: 430px top;
+    background-size: 30px 111px;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+  @media all and (min-width: 481px) and (max-width: 815px) {
+    background-image: image-url('logo-sidebar-detail.jpg');
+    background-position: 325px top;
+    background-size: 30px 111px;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-right: 30px;
+  }
+  @media all and (max-width: 480px) {
+    margin-left: 0;
+    padding-left: 16px;
+    border-left: 0;
+    padding-right: 30px;
+  }
+  .section-leistungsspektrum & {
+    min-height: 550px;
+  }
+}
+
+// hide div navbar #navigation except for iphone for IE
+
+
+#content h1 {
+  @include adjust-font-size-to(24px);
+}
+
+.front h1.page__title {
+  // text-align: center;
+  max-width: 360px;
+}
+
+.front .field-name-body p:first-child {
+  text-align: center;
+  img {
+    width: 50%;
+  }
+  @media all and (max-width: 480px) {
+    img {
+      width: 40%;
+    }
+  }
+}
+
+.not-front .field-name-body p:first-child,
+.section-standort .node {
+  margin-top: 3em;
+}
+
+
+
+
+.region-sidebar-second {
+  @media all and (min-width: 976px) {
+    background-image: image-url('logo-sidebar-detail.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 30px 111px;
+    #block-views-aktuelles-block-1 {
+      margin-top: 130px;
+    }
+  }
+}
+
+// responsive menu
+
+.responsive-menus {
+  margin-top: 4px;
+}
+
+.responsive-menus.responsified span.toggler,
+.responsive-menus.responsified .responsive-menus-simple {
+  background-color: $color2;
+}
+
+.responsive-menus.responsified .responsive-menus-simple {
+  opacity: .9;
+}
+
+// main menu
+
+.region-sidebar-first {
+  #block-menu-block-1,
+  #block-system-main-menu {
+    ul.menu {
+      padding-left: 0;
+      li {
+        list-style: none;
+        list-style-image: none;
+        list-style-type: none;
+        a:link, a:visited {
+          display: block;
+          color: $color2;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding-left: 12px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        a:active, a.active {
+          text-decoration: none;
+          border: 0;
+          font-weight: normal;
+        }
+      }
+
+      li.leaf, li.collapsed {
+        background-image: image-url('sidebar-menu-divider.jpg');
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        padding: 10px;
+        margin-left: 0;
+      }
+      li.expanded {
+        padding-top: 10px;
+      }
+      li.is-active {
+        padding: 10px;
+      }
+      li.active-trail>a {
+        background-image: image-url('menu-leaf-active.jpg');
+        background-position: 2px 10px;
+        background-repeat: no-repeat;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// hiding the main menu in the navigation on larger screen sizes 
+#block-system-main-menu {
+  @media all and (min-width: 481px) {
+    display: none;
+  }
+}
+
+    // hiding the main menu in the sidebar on small screen sizes
+  #block-menu-block-1 {
+    @media all and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+@media all and (min-width: 481px) and (max-width: 815px) {
+  #block-menu-block-1 ul.menu>li>a {
+    // @include adjust-font-size-to(10px);
+    font-size: 12px !important;
+    @include hyphens;
+  }
+}
+
+// 2nd menu level
+
+#block-menu-block-1 ul.menu li ul.menu {
+  li {
+    background-image: none !important;
+    padding: 0 0 0 10px !important;
+    a {
+      background-image: none !important;
+      @include adjust-font-size-to(12px);
+    }
+  }
+  li.last {
+    background-image: image-url('sidebar-menu-divider.jpg') !important;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-bottom: 10px !important;
+    a {
+    }
+  }
+}
+
+// First Sidebar Adresse 
+
+#block-block-3 {
+  padding: 20px 5px 0 20px;
+  p {
+    margin: 0;
+    @include adjust-font-size-to(16px);
+    a {
+      // @include adjust-font-size-to(14px);
+      color: $color2;
+    }
+  }
+}
+
+
+
+@media all and (max-width: 480px) {
+  .mobile-number {
+    font-size: 18px;
+  }
+}
+
+// Second Sidebar Aktuelles 
+
+#block-views-aktuelles-block-1,
+#block-views-aktuelles-block-2 {
+  position: relative;
+  background-image: image-url("aktuelles-top2012.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+      .ie9 &, .ie1 &, .opera & {
+      margin-right: 8px;
+    }
+  @media all and (min-width: 816px) and (max-width: 975px) {
+    // margin-left: 16px;
+    // background-position: 10px top;
+    // padding-right: 30px;
+  }
+  .block-wrapper {
+    padding-top: 2px;
+    padding-bottom: 16px;
+    background-image: image-url("aktuelles-middle2012.png");
+    background-position: left 128px;
+    background-repeat: no-repeat;
+      @media all and (min-width: 816px) and (max-width: 975px) {
+    // margin-left: 16px;
+    // background-position: 10px top;
+    padding-right: 30px;
+  }
+
+    @media all and (max-width: 480px) {
+      background-image: none;
+      background-color: $color3;
+    }
+   }
+  h2.block-title {
+    margin-top: 16px;
+    padding: 0 0 0 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .view-aktuelles {
+    padding: 0 0 0 20px;
+
+    a {
+      color: $color2;
+      font-weight: 600;
+    }
+    .views-field-body {
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .views-field-view-node {
+      margin-bottom: 10px;
+    }
+    .views-field-field-image-artikel {
+
+    }
+  }
+}
+
+// Aktuelles left sidebar
+
+  #block-views-aktuelles-block-2 {
+  // we show the aktuelles block in the left sidebar only on smaller screens
+    @media all and (min-width: 976px) {
+    display: none;
+  }
+  @media all and (max-width: 480px) {
+    h2.block-title,
+    .views-field-title,
+    .views-field-body p,
+    .views-field-view-node,
+    .views-field-field-image-artikel
+     {
+      text-align: center;
+      padding-left: 0;
+      }
+    .view-aktuelles {
+      padding-left: 0 !important;
+      }
+    }
+  }
+
+// Aktuelles right sidebar - show only on large screens
+#block-views-aktuelles-block-1 {
+      // Hide Aktuelles in den Second sidebar on smaller screens
+  @media all and (max-width: 975px) {
+    display: none;
+  }
+}
+// Team
+
+body.page-node-4 h1 {
+  margin-bottom: 16px;
+}
+
+// Bewerbung
+
+form#webform-client-form-293.webform-client-form {
+  max-width: 444px !important;
+  @media all and (min-width: 816px) and (max-width: 975px) {
+  }
+}
+
+// Footer 
+#footer {
+    background-color: $color2;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 41px;
+    @media all and (min-width: 976px) {
+    width: 976px;
+    background-image: image-url('footer.jpg');
+    }
+    @media all and (min-width: 816px) and (max-width: 975px) {
+      background-image: image-url('footer-816.png');
+      width: 816px;
+    }
+    @media all and (min-width: 616px) and (max-width: 815px) {
+      background-image: image-url('footer-616.png');
+      width: 616px;
+    }
+    @media all and (min-width: 481px) and (max-width: 615px) {
+      background-image: image-url('footer-481.png');
+      width: 481px;
+    }
+}
+#block-block-4 {
+  .block-wrapper {
+    p {
+      margin: 0;
+      text-align: center;
+      @media all and (max-width: 480px) {
+        font-size: 10px;
+      }
+      a {
+        color: white
+      }
+    }
+  }
+}
+
+
+// IE Warning
+
+#warning {
+  position:relative; 
+  margin: 0 auto; 
+  height:100px; 
+  background-color:#fff; 
+  margin-top:0px; 
+  padding:4px; 
+  border-bottom:solid 4px $color2;
+  text-align: center;
+}
