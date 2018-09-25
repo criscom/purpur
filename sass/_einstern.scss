@@ -99,3 +99,17 @@ div.messages--warning.messages.warning,
 .error, .messages--error {
   background-repeat: no-repeat !important;
 }
+
+// PURPUR-48: Styling EU Cookie Banner
+
+#sliding-popup .eu-cookie-compliance-default-button,
+#sliding-popup .eu-cookie-compliance-default-button:hover {
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  text-shadow: none;
+  color: #641a45;
+  font-weight: 300;
+}
